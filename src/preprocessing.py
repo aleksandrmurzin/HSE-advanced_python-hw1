@@ -77,6 +77,10 @@ df = pd.merge(
     how="inner"
 )
 
+# save data
+df.to_csv("../data/full_dataset.csv", index=False)
+
+
 # Print summary statement
 print("The DataFrame 'df' now contains cleaned and merged data.")
 
